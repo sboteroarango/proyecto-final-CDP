@@ -1,0 +1,50 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+.env
+venv/
+env/
+.venv/
+codigoproyecto-venv/
+
+# Python artifacts
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook artifacts
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+*.nbdata
+
+# Data files (raw, processed, and interim)
+data/raw/
+data/processed/
+data/interim/
+
+
+# Models and results
+models/
+reports/
+figures/
+results/
+
+# Log files
+*.log
+logs/
+
+# IDE specific files (e.g., VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Environment specific files
+config/local_settings.py
+*.env
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
