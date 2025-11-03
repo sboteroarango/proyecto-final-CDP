@@ -82,7 +82,6 @@ def ft_engineering():
     feature_names = pipeline.named_steps['preprocess'].get_feature_names_out()
     X_num_df = pd.DataFrame(X_num, columns=feature_names, index=df.index)
     df = pd.concat([X_num_df, pd.Series(y_num, name=objetivo, index=df.index)], axis=1)
-    corrected = [col[2:] if col.startswith('_') else col for col in df.columns]
+    corrected = [col[2:].replace(' ','_') if col.startswith('_') else col.replace(' ','_') for col in df.columns]
     df.columns = corrected
     return df
-
