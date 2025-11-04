@@ -56,7 +56,7 @@ pipeline {
         }
     }
 
-    // 4. Acciones Post-Ejecución (Requisito 2.4)
+    // 4. Acciones de Post-Ejecución (Requisito 2.4)
     // Este bloque se ejecuta siempre al final del pipeline, sin importar si falló o no.
     post {
         // 'always' se ejecuta siempre.
